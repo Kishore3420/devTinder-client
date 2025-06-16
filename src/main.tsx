@@ -5,6 +5,9 @@ import './index.css';
 import Root from './components/root.component';
 import Home from './pages/home.page';
 import Profile from './pages/profile.page';
+import Login from './pages/login.page';
+import Register from './pages/register.page';
+
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -12,6 +15,13 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, Component: Home },
 			{ path: 'profile', Component: Profile },
+			{
+				path: 'auth',
+				children: [
+					{ path: 'login', Component: Login },
+					{ path: 'register', Component: Register },
+				],
+			},
 		],
 	},
 ]);
