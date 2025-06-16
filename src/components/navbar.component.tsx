@@ -1,6 +1,6 @@
 const Navbar = () => {
 	return (
-		<div className='navbar bg-base-100 shadow-sm px-5'>
+		<nav className='navbar bg-base-100 shadow-sm px-5'>
 			<div className='flex-1'>
 				<a className='btn btn-ghost text-xl'>DevTinder</a>
 			</div>
@@ -34,7 +34,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
